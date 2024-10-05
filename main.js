@@ -7,7 +7,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png?", {}).addTo(mapa);
 // Crea un marcador en la coordenada (5.5446, -73.3576)
 let marcador = L.marker([5.550139, -73.353454]).addTo(mapa);
 
-// Crea un circulo en la coordenada (5.5446, -73.3576)
+// Crea un círculo en la coordenada (5.5446, -73.3576)
 circulo = L.circle([5.550722, -73.345199], {
     radius: 100,
     color: "green"
