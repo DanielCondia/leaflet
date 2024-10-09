@@ -12,6 +12,15 @@ circulo = L.circle([5.550722, -73.345199], {
     radius: 100,
     color: "green"
 }).addTo(mapa);
+// Crea un popup para el círculo
+circulo.bindPopup("Click en el círculo para verlo en el mapa");
+
+function clicSobreMapa(event) {
+    alert('Latitud: ' + event.latlng.lat + ' Longitud: ' + event.latlng.lng);
+    console.log(event.latlng);
+}
+
+mapa.on("click", clicSobreMapa);
 
 // let radios = [50, 100, 150];
 // let i = 0;
